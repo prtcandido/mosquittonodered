@@ -1,0 +1,12 @@
+{
+  "name": "Node-RED & Mosquitto",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "node-red", 
+  "forwardPorts": [1880, 1883],
+  "portsAttributes": {
+    "1880": {
+      "label": "Node-RED Interface",
+      "onAutoForward": "notify"
+    }
+  }
+}
