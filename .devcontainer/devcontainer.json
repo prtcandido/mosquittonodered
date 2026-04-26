@@ -8,5 +8,11 @@
       "label": "Node-RED Interface",
       "onAutoForward": "notify"
     }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+        "version": "latest",
+        "installDockerBuildx": true
+    }
   }
 }
