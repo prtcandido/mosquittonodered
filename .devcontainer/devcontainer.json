@@ -4,7 +4,7 @@
     "../docker-compose.yml"
   ],
   "service": "nodered",
-  "workspaceFolder": "/workspace",
+  //"workspaceFolder": "/workspace",
   "features": {
     // Permite rodar comandos docker dentro do terminal do codespace
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
