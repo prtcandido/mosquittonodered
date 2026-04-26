@@ -1,32 +1,48 @@
 {
-  "name": "Node-RED & Mosquitto Env",
-  "dockerComposeFile": [
-    "../docker-compose.yml"
-  ],
-  "service": "nodered",
-  //"workspaceFolder": "/workspace",
+  "name": "Docker Simples",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "node-red",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "features": {
-    // Permite rodar comandos docker dentro do terminal do codespace
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
   "customizations": {
     "vscode": {
-      "extensions": [
-        "iot-lab.vscode-mqtt-client", // Útil para testar o Mosquitto
-        "penninkhof.vscode-nodered"   // Suporte ao Node-RED
-      ]
+      "settings": {},
+      "extensions": []
     }
-  },
-  // Abre as portas automaticamente com nomes amigáveis
-  "portsAttributes": {
-    "1880": {
-      "label": "Node-RED Dashboard",
-      "onAutoForward": "notify"
-    },
-    "1883": {
-      "label": "MQTT Broker",
-      "onAutoForward": "ignore"
-    }
-  },
-  "postCreateCommand": "echo 'Ambiente pronto! Rode docker compose up -d se os containers não subirem sozinhos.'"
+  }
 }
+
+// {
+//   "name": "Node-RED & Mosquitto Env",
+//   "dockerComposeFile": [
+//     "../docker-compose.yml"
+//   ],
+//   "service": "nodered",
+//   //"workspaceFolder": "/workspace",
+//   "features": {
+//     // Permite rodar comandos docker dentro do terminal do codespace
+//     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+//   },
+//   "customizations": {
+//     "vscode": {
+//       "extensions": [
+//         "iot-lab.vscode-mqtt-client", // Útil para testar o Mosquitto
+//         "penninkhof.vscode-nodered"   // Suporte ao Node-RED
+//       ]
+//     }
+//   },
+//   // Abre as portas automaticamente com nomes amigáveis
+//   "portsAttributes": {
+//     "1880": {
+//       "label": "Node-RED Dashboard",
+//       "onAutoForward": "notify"
+//     },
+//     "1883": {
+//       "label": "MQTT Broker",
+//       "onAutoForward": "ignore"
+//     }
+//   },
+//   "postCreateCommand": "echo 'Ambiente pronto! Rode docker compose up -d se os containers não subirem sozinhos.'"
+// }
