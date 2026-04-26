@@ -1,16 +1,16 @@
 
-{
-  "name": "Node-RED & Mosquitto",
-  "dockerComposeFile": "../docker-compose.yml",
-  "service": "mosquitto", 
-  "forwardPorts": [1880, 1883],
-  "portsAttributes": {
-    "1880": {
-      "label": "Node-RED Interface",
-      "onAutoForward": "notify"
-    }
-  }
-}
+// {
+//   "name": "Node-RED & Mosquitto",
+//   "dockerComposeFile": "../docker-compose.yml",
+//   "service": "mosquitto", 
+//   "forwardPorts": [1880, 1883],
+//   "portsAttributes": {
+//     "1880": {
+//       "label": "Node-RED Interface",
+//       "onAutoForward": "notify"
+//     }
+//   }
+// }
 
 // {
 //   "name": "IoT Dev Environment",

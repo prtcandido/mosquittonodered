@@ -1,10 +1,10 @@
 services:
-  app:
-    image: mcr.microsoft.com/devcontainers/base:ubuntu
-    volumes:
-      - .:/workspaces/${localWorkspaceFolderBasename}:cached
-    command: sleep infinity
-    
+  # app:
+  #   image: mcr.microsoft.com/devcontainers/base:ubuntu
+  #   volumes:
+  #     - .:/workspaces/${localWorkspaceFolderBasename}:cached
+  #   command: sleep infinity
+
   mosquitto:
     image: eclipse-mosquitto:latest
     container_name: mosquitto
