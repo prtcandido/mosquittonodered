@@ -1,15 +1,28 @@
 
 {
-  "name": "IoT Dev Environment",
-  //"dockerComposeFile": "../docker-compose.yml",
-  "service": "app",
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-  "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-  },
+  "name": "Node-RED & Mosquitto",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "node-red", 
   "forwardPorts": [1880, 1883],
-  "postCreateCommand": "docker compose up -d"
+  "portsAttributes": {
+    "1880": {
+      "label": "Node-RED Interface",
+      "onAutoForward": "notify"
+    }
+  }
 }
+
+// {
+//   "name": "IoT Dev Environment",
+//   //"dockerComposeFile": "../docker-compose.yml",
+//   "service": "app",
+//   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+//   "features": {
+//     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+//   },
+//   "forwardPorts": [1880, 1883],
+//   "postCreateCommand": "docker compose up -d"
+// }
 
 
 // {
