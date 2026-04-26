@@ -1,0 +1,5 @@
+{
+    "name": "Ubuntu Simples",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "forwardPorts": [1880, 1883]
+}
