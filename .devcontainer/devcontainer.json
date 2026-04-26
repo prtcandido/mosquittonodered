@@ -1,7 +1,7 @@
 {
-  "name": "Docker Simples",
-  "dockerComposeFile": "../docker-compose.yml",
-  "service": "node-red",
+  "name": "Docker Simples",  "image": "mcr.microsoft.com/devcontainers/base:latest",  
+  //"dockerComposeFile": "../docker-compose.yml",
+  //"service": "node-red",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
