@@ -1,8 +1,8 @@
 {
-  "name": "Node-RED Container",
+  "name": "Node-RED Codespace",
   "dockerComposeFile": "docker-compose.yml",
   "service": "node-red",
-  "workspaceFolder": "/workspace",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "forwardPorts": [1880],
   "postCreateCommand": "echo 'Node-RED pronto no Codespace!'"
 }
