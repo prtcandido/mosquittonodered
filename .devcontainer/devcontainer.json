@@ -7,11 +7,11 @@
   //   "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   // },
   // "forwardPorts": [1880, 1883],
-  "forwardPorts": [1880],
-  "portsAttributes": {
-    "1880": { "label": "Node-RED UI", "onAutoForward": "notify" }
-    // "1883": { "label": "Mosquitto Broker", "onAutoForward": "ignore" }
-  },
+  //"forwardPorts": [1880],
+  //"portsAttributes": {
+  //  "1880": { "label": "Node-RED UI", "onAutoForward": "notify" }
+  //  "1883": { "label": "Mosquitto Broker", "onAutoForward": "ignore" }
+  //},
   // Comando para garantir que qualquer processo intruso seja morto ao iniciar
   //"postCreateCommand": "sudo service nodered stop || true && sudo service mosquitto stop || true"
 }
