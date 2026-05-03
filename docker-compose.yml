@@ -1,20 +1,20 @@
 services:
-  app:
-    image: mcr.microsoft.com/devcontainers/base:ubuntu
-    volumes:
-      - .:/workspaces/${localWorkspaceFolderBasename}:cached
-    command: sleep infinity
+  # app:
+  #   image: mcr.microsoft.com/devcontainers/base:ubuntu
+  #   volumes:
+  #     - .:/workspaces/${localWorkspaceFolderBasename}:cached
+  #   command: sleep infinity
 
-  mosquitto:
-    image: eclipse-mosquitto:latest
-    container_name: mosquitto
-    restart: always
-    ports:
-      - "1884:1883"
-    volumes:
-      - ./mosquitto/config:/mosquitto/config
-      - ./mosquitto/data:/mosquitto/data
-      - ./mosquitto/log:/mosquitto/log
+  # mosquitto:
+  #   image: eclipse-mosquitto:latest
+  #   container_name: mosquitto
+  #   restart: always
+  #   ports:
+  #     - "1884:1883"
+  #   volumes:
+  #     - ./mosquitto/config:/mosquitto/config
+  #     - ./mosquitto/data:/mosquitto/data
+  #     - ./mosquitto/log:/mosquitto/log
 
   node-red:
     image: nodered/node-red:latest
@@ -24,5 +24,5 @@ services:
       - "1880:1880"
     volumes:
       - ./node-red-data:/data
-    depends_on:
-      - mosquitto
+    # depends_on:
+    #   - mosquitto
