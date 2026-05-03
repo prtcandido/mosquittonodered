@@ -1,8 +1,16 @@
 {
   "name": "Node-RED Codespace",
-  "dockerComposeFile": "docker-compose.yml",
+  "dockerComposeFile": "../docker-compose.yml",
   "service": "node-red",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "forwardPorts": [1880],
-  "postCreateCommand": "echo 'Node-RED pronto no Codespace!'"
+  "postCreateCommand": "echo 'Node-RED pronto no Codespace!'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
 }
